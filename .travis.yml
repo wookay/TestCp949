@@ -1,0 +1,23 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+notifications:
+  email: false
+
+language: julia
+
+os: windows
+
+julia:
+  - 1.2
+
+script:
+  # ver: Windows Server 1803
+
+  - cd c:\\julia\\bin
+  - ./julia.exe -E "1"
+
+  - echo "cp -r c:\\julia c:\\ex테스트" | iconv -f utf-8 -t cp949 > cp_949.sh
+  - chmod +x cp_949.sh
+  - ./cp_949.sh
+
+  - cd c:\\ex*\\bin
+  - ./julia.exe -E "1"
