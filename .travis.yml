@@ -11,7 +11,7 @@ julia:
 
 script:
   # ver: Windows Server 1803
-  - chcp 949
+  - cmd.exe /C 'chcp 949'
 
   # echo cp -r c:\\\\\\\\julia c:\\\\\\\\테스트 | iconv -f utf-8 -t cp949 > cp_949.sh
   - iconv -f cp949 -t utf-8 cp_949.sh
