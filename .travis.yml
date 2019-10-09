@@ -12,9 +12,14 @@ julia:
 script:
   # ver: Windows Server 1803
 
-  # echo cp -r c:\\\\\\\\julia c:\\\\\\\\ex테스트 | iconv -f utf-8 -t cp949 > cp_949.sh
+  # echo cp -r c:\\\\\\\\julia c:\\\\\\\\테스트 | iconv -f utf-8 -t cp949 > cp_949.sh
   - iconv -f cp949 -t utf-8 cp_949.sh
   - ./cp_949.sh
 
-  - cd c:\\ex*\\bin
-  - ./julia.exe -E "1"
+  # echo ls c:\\\\\\\\테스트 | iconv -f utf-8 -t cp949 > ls_949.sh
+  - iconv -f cp949 -t utf-8 ls_949.sh
+  - ./ls_949.sh
+
+  # echo c:\\\\\\\\테스트\\\\\\\\bin\\\\\\\\julia.exe -E "1" | iconv -f utf-8 -t cp949 > jl_949.sh
+  - iconv -f cp949 -t utf-8 jl_949.sh
+  - ./jl_949.sh

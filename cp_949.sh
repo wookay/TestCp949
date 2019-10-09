@@ -1,1 +1,1 @@
-cp -r c:\\julia c:\\ex테스트
+cp -r c:\\julia c:\\테스트
