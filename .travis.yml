@@ -12,13 +12,8 @@ julia:
 script:
   # ver: Windows Server 1803
 
-  - cd c:\\julia\\bin
-  - ./julia.exe -E "1"
-
-  - cd c:\\
-  - echo cp -r c:\\julia c:\\ex테스트 | iconv -f utf-8 -t cp949 > cp_949.sh
-  - cat cp_949.sh
-  - chmod +x cp_949.sh
+  # echo cp -r c:\\\\julia c:\\\\ex테스트 | iconv -f utf-8 -t cp949 > cp_949.sh
+  - iconv -f cp949 -t utf-8 cp_949.sh
   - ./cp_949.sh
 
   - cd c:\\ex*\\bin
