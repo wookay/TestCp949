@@ -25,6 +25,6 @@ script:
   - iconv -f cp949 -t utf-8 jl_949.sh
   - ./jl_949.sh
 
-  # echo cmd.exe /C 'c:\\\\테스트\\\\bin\\\\julia.exe -E "1"' | iconv -f utf-8 -t cp949 > cmd_949.sh
+  # echo cmd.exe /C \'c:\\\\테스트\\\\bin\\\\julia.exe -E \"1\"\' | iconv -f utf-8 -t cp949 > cmd_949.sh
   - iconv -f cp949 -t utf-8 cmd_949.sh
   - ./cmd_949.sh

@@ -1,1 +1,1 @@
-cmd.exe /C c:\\테스트\\bin\\julia.exe -E "1"
+cmd.exe /C 'c:\테스트\bin\julia.exe -E "1"'
